@@ -80,3 +80,5 @@ app.listen(PORT, () => {
   consola.ready(`服务器已开启： http://localhost:${PORT}/`)
   logger.info(`✔ server is opening!`)
 })
+
+module.exports = app;

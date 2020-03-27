@@ -1,5 +1,6 @@
 # koa-admin-template
  koa-template
+ #### 使用: npm install; npm run start;
 
 - npm init 
 - npm install koa
@@ -26,3 +27,13 @@
 "koa-json",
 "koa-logger",
 "koa-onerror"
+
+### 单元测试
+> 编写单元测试。
+#### 安装：npm install --save-dev mocha chai supertest
+#### 使用：npm run test
+
+- mocha 模块是测试框架
+- chai 模块是用来进行测试结果断言库，比如一个判断 1 + 1 是否等于 2
+- supertest 模块是http请求测试库，用来请求API接口
+
