@@ -71,7 +71,14 @@ app.on('error', (err, ctx) => {
     logger.error({ originErr: err }, `错误：${err.message}`)
   }
 })
+// 监听全局错误防止漏网之鱼
+process.on('uncaughtException', (error) => {
+  logger.error('uncaughtException', error)
+})
 
+process.on('unhandledRejection', (error) => {
+  logger.error('unhandledRejection', error)
+})
 // route 
 routing(app);
 
