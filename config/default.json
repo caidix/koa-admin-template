@@ -1,0 +1,8 @@
+{
+  "PORT": 7000,
+  "api_hosts": [],
+  "baseApi": "api",
+  "manager": [
+    "cd"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "koa-admin-template",
+  "version": "1.0.0",
+  "description": "koa2-template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "koa-admin-template"
+  },
+  "author": "cd",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.1",
+    "consola": "^2.11.3",
+    "crypto": "^1.0.1",
+    "glob": "^7.1.6",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-bunyan-logger": "^2.1.0",
+    "koa-router": "^8.0.8",
+    "koa-session": "^5.13.1",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.9.6",
+    "mongoose-auto-increment": "^5.0.1"
+  }
+}
