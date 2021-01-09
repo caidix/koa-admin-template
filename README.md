@@ -37,3 +37,15 @@
 - chai 模块是用来进行测试结果断言库，比如一个判断 1 + 1 是否等于 2
 - supertest 模块是http请求测试库，用来请求API接口
 
+### 用途
+- cookie-parser: 对res传递一个res.cookie方法（用于response传给前端页面set-cookie）和req增加一个cookies对象。
+
+```js
+ res.cookie('token', value {
+  maxAge: 1000 * 60 * 15, //过期时间
+  httpOnly: true,
+  domain: 'localhost:3000' // 生效域名
+ }
+ )
+```
+- bodyparser: res.body的时候是不会获得前端传递的请求体，它需要经过一定的转换而得。该插件将阅读headers里的content-type，将传过来的请求体转换成json的形式
